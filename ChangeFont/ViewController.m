@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
 
 @end
 
@@ -16,7 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+//    for(NSString *familyName in [UIFont familyNames]){
+//        NSLog(@"Font FamilyName = %@",familyName); //输出字体族科名字
+//
+//        for(NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
+//            NSLog(@"\t%@",fontName);         //输出字体族科下字样名字
+//        }
+//    }
+    
+//    _myLabel.font = [UIFont fontWithName:@"FZLBJW--GB1-0" size:17.0f];
+//    _myButton.titleLabel.font = [UIFont fontWithName:@"FZLBJW--GB1-0" size:17.0f];
+//    _myLabel.tag = 10086;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,6 +9,8 @@
 #import "UILabel+FontChange.h"
 #import <objc/runtime.h>
 
+#define CustomFontName @"FZLBJW--GB1-0"
+
 @implementation UILabel (FontChange)
 
 + (void)load {
@@ -40,20 +42,20 @@
 - (void)myWillMoveToSuperview:(UIView *)newSuperview {
     
     [self myWillMoveToSuperview:newSuperview];
-    if ([self isKindOfClass:NSClassFromString(@"UIButtonLabel")]) {
-        return;
-    }
+//    if ([self isKindOfClass:NSClassFromString(@"UIButtonLabel")]) {
+//        return;
+//    }
     if (self) {
+        
         if (self.tag == 10086) {
             self.font = [UIFont systemFontOfSize:self.font.pointSize];
         } else {
-            if ([UIFont fontNamesForFamilyName:@"MFYueHei_Noncommercial-Light"])
-                self.font  = [UIFont fontWithName:@"MFYueHei_Noncommercial-Light" size:self.font.pointSize];
+            if ([UIFont fontNamesForFamilyName:CustomFontName])
+                self.font  = [UIFont fontWithName:CustomFontName size:self.font.pointSize];
         }
-//        self.font  = [UIFont systemFontOfSize:self.font.pointSize];
-
     }
 
 }
+
 
 @end

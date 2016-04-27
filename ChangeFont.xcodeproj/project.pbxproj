@@ -15,6 +15,8 @@
 		926A2CA81CD0D46800BDB2B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926A2CA61CD0D46800BDB2B9 /* LaunchScreen.storyboard */; };
 		926A2CB31CD0D46800BDB2B9 /* ChangeFontTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 926A2CB21CD0D46800BDB2B9 /* ChangeFontTests.m */; };
 		926A2CBE1CD0D46800BDB2B9 /* ChangeFontUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 926A2CBD1CD0D46800BDB2B9 /* ChangeFontUITests.m */; };
+		926A2CCC1CD0D8D000BDB2B9 /* loveway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 926A2CCB1CD0D8D000BDB2B9 /* loveway.ttf */; };
+		926A2CD41CD0EEBB00BDB2B9 /* UILabel+FontChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 926A2CD31CD0EEBB00BDB2B9 /* UILabel+FontChange.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		926A2CB91CD0D46800BDB2B9 /* ChangeFontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChangeFontUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		926A2CBD1CD0D46800BDB2B9 /* ChangeFontUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeFontUITests.m; sourceTree = "<group>"; };
 		926A2CBF1CD0D46800BDB2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		926A2CCB1CD0D8D000BDB2B9 /* loveway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = loveway.ttf; sourceTree = "<group>"; };
+		926A2CD21CD0EEBB00BDB2B9 /* UILabel+FontChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FontChange.h"; sourceTree = "<group>"; };
+		926A2CD31CD0EEBB00BDB2B9 /* UILabel+FontChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FontChange.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		926A2C971CD0D46700BDB2B9 /* ChangeFont */ = {
 			isa = PBXGroup;
 			children = (
+				926A2CD11CD0EEBB00BDB2B9 /* UILabel+FontChange */,
 				926A2C9B1CD0D46800BDB2B9 /* AppDelegate.h */,
 				926A2C9C1CD0D46800BDB2B9 /* AppDelegate.m */,
 				926A2C9E1CD0D46800BDB2B9 /* ViewController.h */,
@@ -117,6 +123,7 @@
 		926A2C981CD0D46700BDB2B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				926A2CCB1CD0D8D000BDB2B9 /* loveway.ttf */,
 				926A2C991CD0D46700BDB2B9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +145,15 @@
 				926A2CBF1CD0D46800BDB2B9 /* Info.plist */,
 			);
 			path = ChangeFontUITests;
+			sourceTree = "<group>";
+		};
+		926A2CD11CD0EEBB00BDB2B9 /* UILabel+FontChange */ = {
+			isa = PBXGroup;
+			children = (
+				926A2CD21CD0EEBB00BDB2B9 /* UILabel+FontChange.h */,
+				926A2CD31CD0EEBB00BDB2B9 /* UILabel+FontChange.m */,
+			);
+			path = "UILabel+FontChange";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +262,7 @@
 				926A2CA81CD0D46800BDB2B9 /* LaunchScreen.storyboard in Resources */,
 				926A2CA51CD0D46800BDB2B9 /* Assets.xcassets in Resources */,
 				926A2CA31CD0D46800BDB2B9 /* Main.storyboard in Resources */,
+				926A2CCC1CD0D8D000BDB2B9 /* loveway.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				926A2CA01CD0D46800BDB2B9 /* ViewController.m in Sources */,
+				926A2CD41CD0EEBB00BDB2B9 /* UILabel+FontChange.m in Sources */,
 				926A2C9D1CD0D46800BDB2B9 /* AppDelegate.m in Sources */,
 				926A2C9A1CD0D46700BDB2B9 /* main.m in Sources */,
 			);
