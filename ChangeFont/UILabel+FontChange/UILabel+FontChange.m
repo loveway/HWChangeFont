@@ -42,9 +42,9 @@
 - (void)myWillMoveToSuperview:(UIView *)newSuperview {
     
     [self myWillMoveToSuperview:newSuperview];
-//    if ([self isKindOfClass:NSClassFromString(@"UIButtonLabel")]) {
-//        return;
-//    }
+    if ([self isKindOfClass:NSClassFromString(@"UIButtonLabel")]) {
+        return;
+    }
     if (self) {
         
         if (self.tag == 10086) {
